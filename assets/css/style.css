@@ -1646,3 +1646,9 @@ ion-icon {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
   border: 2px solid var(--orange-yellow-crayola);
 }
+.title-divider {
+  width: 50%; /* Adjust width */
+  margin: 5px auto; /* Adds spacing */
+  border: 0.5px solid var(--orange-yellow-crayola); /* Light divider */
+}
+
