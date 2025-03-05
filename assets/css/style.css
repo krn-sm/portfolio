@@ -1595,3 +1595,50 @@ main {
 ion-icon {
   pointer-events: none;
 }
+
+.video-container {
+  display: flex;
+  flex-direction: column; /* Stack videos vertically */
+  gap: 50px; /* Increased space between videos */
+  align-items: center; /* Center videos */
+  width: 100%;
+  padding: 20px 0; /* Add spacing around */
+}
+
+.video-item {
+  width: 95%; /* Slightly larger videos */
+  max-width: 1000px; /* Increase max width */
+  text-align: center; /* Center title */
+}
+
+.video-title {
+  font-size: 24px; /* Slightly larger */
+  font-weight: bold;
+  color: var(--orange-yellow-crayola); /* Match theme color */
+  margin-bottom: 15px;
+  text-transform: uppercase; /* Make it stand out */
+}
+
+.video-item iframe {
+  width: 100%; /* Full width */
+  max-height: 550px; /* Slightly taller */
+  border-radius: 5px; /* Reduce border radius */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Softer shadow */
+  border: 2px solid var(--orange-yellow-crayola); /* Subtle border */
+}
+
+.walkthrough-intro {
+  text-align: center;
+  font-size: 20px; /* More readable */
+  font-weight: 400;
+  color: var(--light-gray);
+  margin-bottom: 40px; /* More space */
+  padding: 20px;
+  border-radius: 12px;
+  background: var(--border-gradient-onyx); 
+  box-shadow: var(--shadow-3);
+  line-height: 1.8;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
