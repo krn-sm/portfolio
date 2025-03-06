@@ -296,9 +296,10 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-
+  
   // ✅ Close modal when clicking the X button
   modalCloseBtn.addEventListener("click", () => {
     modal.classList.remove("active");
   });
 });
+
