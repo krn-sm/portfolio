@@ -1596,18 +1596,21 @@ ion-icon {
   pointer-events: none;
 }
 
+/* ✅ Walkthrough Intro Box */
 .walkthrough-intro {
   text-align: center;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 400;
   color: var(--light-gray);
-  padding: 25px;
-  border-radius: 15px; /* No rounded corners for full width */
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
   background: var(--border-gradient-onyx); 
-  box-shadow: var(--shadow-3);
-  line-height: 1.8;
-  width: 100%; /* Full width */
-  margin-bottom: 40px; /* Space between intro and videos */
+  box-shadow: var(--shadow-2);
+  line-height: 1.6;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ✅ Horizontal Line */
@@ -1616,6 +1619,68 @@ ion-icon {
   height: 2px;
   background: var(--orange-yellow-crayola); /* Yellow Line */
   margin: 30px 0; /* Space before videos */
+}
+/* ✅ Project Item (Video Box) */
+.project-item {
+  background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  border-radius: 16px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.project-item:hover {
+  box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.4);
+}
+
+/* ✅ Project Image (Video Thumbnail) */
+.project-img {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.project-item:hover img {
+  transform: scale(1.05);
+}
+/* ✅ Play Button */
+.project-item-icon-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 28px;
+  color: yellow;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+.project-item:hover .project-item-icon-box {
+  opacity: 1;
+}
+.title-divider {
+  width: 50%; /* Adjust width */
+  margin: 5px auto; /* Adds spacing */
+  border: 0.5px solid var(--orange-yellow-crayola); /* Light divider */
+}
+.info-content .title {
+  margin-top: 5px; /* Adds spacing between titles */
+  font-size: 14px; /* Adjust if needed */
+  font-weight: 400;
+  text-align: center;
 }
 .video-container {
   display: flex;
@@ -1628,7 +1693,7 @@ ion-icon {
 .video-item {
   width: 100%; /* Full width */
   max-width: 1200px; /* Prevents it from being too large */
-  text-align: left
+  text-align: center; /* Center the title */
 }
 
 .video-title {
@@ -1646,9 +1711,3 @@ ion-icon {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
   border: 2px solid var(--orange-yellow-crayola);
 }
-.title-divider {
-  width: 50%; /* Adjust width */
-  margin: 5px auto; /* Adds spacing */
-  border: 0.5px solid var(--orange-yellow-crayola); /* Light divider */
-}
-
