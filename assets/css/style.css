@@ -1683,37 +1683,32 @@ ion-icon {
   text-align: center;
 }
 .video-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
-  gap: 30px; /* Adjusted spacing */
-  align-items: center;
-  justify-content: center;
+  display: flex;
+  flex-direction: column; /* Stack videos vertically */
+  gap: 50px; /* Space between videos */
+  align-items: center; /* Center videos */
   width: 100%;
-  padding: 20px;
 }
 
 .video-item {
-  width: 100%;
-  max-width: 500px; /* Reduced max width */
-  text-align: center;
-  background: var(--border-gradient-onyx);
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 95%; /* Large video layout */
+  max-width: 1000px; /* Prevent videos from being too wide */
+  text-align: center; /* Center the title */
 }
 
 .video-title {
-  font-size: 18px; /* Reduced font size */
+  font-size: 24px;
   font-weight: bold;
   color: var(--orange-yellow-crayola);
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   text-transform: uppercase;
 }
 
 .video-item iframe {
   width: 100%;
-  height: 250px; /* Reduced height */
-  border-radius: 8px; /* Slightly rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-height: 550px;
+  border-radius: 5px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
   border: 2px solid var(--orange-yellow-crayola);
 }
+
