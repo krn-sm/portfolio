@@ -273,6 +273,19 @@ document.addEventListener("DOMContentLoaded", function () {
       "./assets/images/img21 (15).jpg",
       "./assets/images/img21 (16).jpg",
     ],
+    "AERTSSEN FACTORY, ABU-DHABI": [
+      "./assets/images/img22 (1).jpg",
+      "./assets/images/img22 (2).jpg",
+      "./assets/images/img22 (3).jpg",
+      "./assets/images/img22 (4).jpg",
+      "./assets/images/img22 (5).jpg",
+      "./assets/images/img22 (6).jpg",
+      "./assets/images/img22 (7).jpg",
+      "./assets/images/img22 (8).jpg",
+      "./assets/images/img22 (9).jpg",
+      "./assets/images/img22 (10).jpg",
+      "./assets/images/img22 (11).jpg",
+    ],
   };
 
   // ✅ Open modal when clicking a project
