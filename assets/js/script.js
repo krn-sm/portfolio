@@ -286,6 +286,13 @@ document.addEventListener("DOMContentLoaded", function () {
       "./assets/images/img22 (10).jpg",
       "./assets/images/img22 (11).jpg",
     ],
+    "DUCAST FACTORY, ABU-DHABI": [
+      "./assets/images/img23 (1).jpg",
+      "./assets/images/img23 (2).jpg",
+      "./assets/images/img23 (3).jpg",
+      "./assets/images/img23 (4).jpg",
+      "./assets/images/img23 (5).jpg",
+    ],
   };
 
   // ✅ Open modal when clicking a project
@@ -309,10 +316,9 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-  
+
   // ✅ Close modal when clicking the X button
   modalCloseBtn.addEventListener("click", () => {
     modal.classList.remove("active");
   });
 });
-
