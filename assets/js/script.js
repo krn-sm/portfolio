@@ -293,6 +293,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "./assets/images/img23 (4).jpg",
       "./assets/images/img23 (5).jpg",
     ],
+    "INTERIOR WORKS": ["./assets/images/img.png"],
   };
 
   // ✅ Open modal when clicking a project
