@@ -294,6 +294,18 @@ document.addEventListener("DOMContentLoaded", function () {
       "./assets/images/img23 (5).jpg",
     ],
     "INTERIOR WORKS": ["./assets/images/img.png"],
+    "BISCONNI FOOD FACTORY": [
+      "./assets/images/img24 (2).jpg",
+      "./assets/images/img24 (1).jpg",
+      "./assets/images/img24 (3).jpg",
+      "./assets/images/img24 (4).jpg",
+      "./assets/images/img24 (5).jpg",
+      "./assets/images/img24 (6).jpg",
+      "./assets/images/img24 (7).jpg",
+      "./assets/images/img24 (8).jpg",
+      "./assets/images/img24 (9).jpg",
+      "./assets/images/img24 (10).jpg",
+    ],
   };
 
   // ✅ Open modal when clicking a project
