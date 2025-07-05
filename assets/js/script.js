@@ -136,8 +136,8 @@ document.addEventListener("DOMContentLoaded", function () {
       "./assets/images/img5 (3).jpg",
     ],
     "TASNEE METAL COMPANY, OMAN": [
-      "./assets/images/img6 (1).jpg",
       "./assets/images/img6 (2).jpg",
+      "./assets/images/img6 (1).jpg",
     ],
     "EV NEXUS SHOWROOM, CHENNAI": [
       "./assets/images/img7 (1).jpg",
@@ -305,6 +305,19 @@ document.addEventListener("DOMContentLoaded", function () {
       "./assets/images/img24 (8).jpg",
       "./assets/images/img24 (9).jpg",
       "./assets/images/img24 (10).jpg",
+      "./assets/images/img24 (11).jpg",
+      "./assets/images/img24 (12).jpg",
+      "./assets/images/img24 (13).jpg",
+      "./assets/images/img24 (14).jpg",
+      "./assets/images/img24 (15).jpg",
+      "./assets/images/img24 (16).jpg",
+      "./assets/images/img24 (17).jpg",
+      "./assets/images/img24 (18).jpg",
+      "./assets/images/img24 (19).jpg",
+      "./assets/images/img24 (20).jpg",
+      "./assets/images/img24 (21).jpg",
+      "./assets/images/img24 (22).jpg",
+      "./assets/images/img24 (23).jpg",
     ],
   };
 
