@@ -319,6 +319,24 @@ document.addEventListener("DOMContentLoaded", function () {
       "./assets/images/img24 (22).jpg",
       "./assets/images/img24 (23).jpg",
     ],
+    "ALAIN FARM HOUSE": [
+      "./assets/images/img25 (1).jpg",
+      "./assets/images/img25 (2).jpg",
+      "./assets/images/img25 (3).jpg",
+      "./assets/images/img25 (4).jpg",
+      "./assets/images/img25 (5).jpg",
+      "./assets/images/img25 (6).jpg",
+      "./assets/images/img25 (7).jpg",
+      "./assets/images/img25 (8).jpg",
+      "./assets/images/img25 (9).jpg",
+      "./assets/images/img25 (10).jpg",
+      "./assets/images/img25 (11).jpg",
+      "./assets/images/img25 (12).jpg",
+      "./assets/images/img25 (13).jpg",
+      "./assets/images/img25 (14).jpg",
+      "./assets/images/img25 (15).jpg",
+      "./assets/images/img25 (16).jpg",
+    ],
   };
 
   // ✅ Open modal when clicking a project
