@@ -1486,7 +1486,7 @@ main {
   max-width: 90vw; /* Ensure images are large but not too wide */
   max-height: 80vh; /* Ensure images fit well inside modal */
   object-fit: contain;
-  border-radius: 10px;
+  
 }
 
 /* ✅ Close Button */
@@ -1544,7 +1544,8 @@ main {
 
 .modal-close-btn ion-icon {
   font-size: 32px;
-  color: var(--orange-yellow-crayola);
+  color: black;
+  background-color: var(--orange-yellow-crayola);
 }
 .areas-of-interest {
   text-align: left;
