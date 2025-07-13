@@ -334,8 +334,6 @@ document.addEventListener("DOMContentLoaded", function () {
       "./assets/images/img25 (12).jpg",
       "./assets/images/img25 (13).jpg",
       "./assets/images/img25 (14).jpg",
-      "./assets/images/img25 (15).jpg",
-      "./assets/images/img25 (16).jpg",
     ],
   };
 
