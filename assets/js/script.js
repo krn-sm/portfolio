@@ -294,7 +294,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "./assets/images/img23 (5).jpg",
     ],
     "INTERIOR WORKS": ["./assets/images/img.png"],
-    "BISCONNI FOOD FACTORY": [
+    "BISCONNI FOOD FACTORY, ABU-DHABI": [
       "./assets/images/img24 (2).jpg",
       "./assets/images/img24 (1).jpg",
       "./assets/images/img24 (3).jpg",
@@ -319,7 +319,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "./assets/images/img24 (22).jpg",
       "./assets/images/img24 (23).jpg",
     ],
-    "ALAIN FARM HOUSE": [
+    "AL-AIN FARM HOUSE": [
       "./assets/images/img25 (1).jpg",
       "./assets/images/img25 (2).jpg",
       "./assets/images/img25 (3).jpg",
