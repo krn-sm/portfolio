@@ -384,22 +384,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (projectImages[projectTitle]) {
         modalImages.innerHTML = ""; // Clear previous images
-        
-        // ✅ Add project images
-        projectImages[projectTitle].forEach((imgSrc) => {
-          const img = document.createElement("img");
-          img.src = imgSrc;
-          img.alt = "Project Image";
-          modalImages.appendChild(img);
-        });
-
         // ✅ NEW: Add newspaper clippings section if available
         if (newspaperClippings[projectTitle]) {
           // Create section divider
           const divider = document.createElement("div");
+          divider.innerHTML = "<h3>📰 Newspaper Clipping</h3>";
           divider.className = "clippings-divider";
-          divider.innerHTML = "<h3>📰 Newspaper Clippings</h3>";
           modalImages.appendChild(divider);
+          
 
           // Add clipping images
           newspaperClippings[projectTitle].forEach((clippingSrc) => {
@@ -408,8 +400,17 @@ document.addEventListener("DOMContentLoaded", function () {
             clippingImg.alt = "Newspaper Clipping";
             clippingImg.className = "clipping-image";
             modalImages.appendChild(clippingImg);
+            
           });
         }
+        // ✅ Add project images
+        projectImages[projectTitle].forEach((imgSrc) => {
+          const img = document.createElement("img");
+          img.src = imgSrc;
+          img.alt = "Project Image";
+          modalImages.appendChild(img);
+        });
+
 
         modal.classList.add("active");
       }

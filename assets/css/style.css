@@ -1714,20 +1714,20 @@ ion-icon {
 }
 
 .clippings-divider {
-  margin: 40px 0 20px 0;
-  padding-top: 30px;
-  border-top: 2px solid #ffdb70;
+  margin: 0 0 20px 0;
+  padding-top: 20px;
+  border-bottom: 2px solid #ffdb70;
 }
 
 .clippings-divider h3 {
   color: #ffdb70;
   font-size: 1.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .clipping-image {
   border: 2px solid #ddd;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .image-container.loading {
