@@ -1713,3 +1713,40 @@ ion-icon {
   border: 2px solid var(--orange-yellow-crayola);
 }
 
+.clippings-divider {
+  margin: 40px 0 20px 0;
+  padding-top: 30px;
+  border-top: 2px solid #ffdb70;
+}
+
+.clippings-divider h3 {
+  color: #ffdb70;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.clipping-image {
+  border: 2px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.image-container.loading {
+  background: linear-gradient(90deg, #2b2b2b 25%, #3a3a3a 50%, #2b2b2b 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  min-height: 400px;
+}
+
+@keyframes loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.image-container.loading img {
+  opacity: 0;
+}
+
+.image-container img {
+  opacity: 1;
+  transition: opacity 0.3s;
+}

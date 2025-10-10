@@ -362,6 +362,18 @@ document.addEventListener("DOMContentLoaded", function () {
     ],
   };
 
+  // ✅ NEW: Newspaper clippings dictionary (add your clipping images here)
+  const newspaperClippings = {
+    "BISCONNI FOOD FACTORY, ABU-DHABI": [
+      "./assets/images/article1.jpg",
+      // Add more clipping images as needed
+    ],
+    // Add other projects with clippings here:
+    // "DE ROYAL TOBACCO FACTORY, UAQ": [
+    //   "./assets/images/deroyal-clipping1.jpg",
+    // ],
+  };
+
   // ✅ Open modal when clicking a project
   projectItems.forEach((item) => {
     item.addEventListener("click", function (event) {
@@ -372,12 +384,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (projectImages[projectTitle]) {
         modalImages.innerHTML = ""; // Clear previous images
+        
+        // ✅ Add project images
         projectImages[projectTitle].forEach((imgSrc) => {
           const img = document.createElement("img");
           img.src = imgSrc;
           img.alt = "Project Image";
           modalImages.appendChild(img);
         });
+
+        // ✅ NEW: Add newspaper clippings section if available
+        if (newspaperClippings[projectTitle]) {
+          // Create section divider
+          const divider = document.createElement("div");
+          divider.className = "clippings-divider";
+          divider.innerHTML = "<h3>📰 Newspaper Clippings</h3>";
+          modalImages.appendChild(divider);
+
+          // Add clipping images
+          newspaperClippings[projectTitle].forEach((clippingSrc) => {
+            const clippingImg = document.createElement("img");
+            clippingImg.src = clippingSrc;
+            clippingImg.alt = "Newspaper Clipping";
+            clippingImg.className = "clipping-image";
+            modalImages.appendChild(clippingImg);
+          });
+        }
 
         modal.classList.add("active");
       }
@@ -388,4 +420,22 @@ document.addEventListener("DOMContentLoaded", function () {
   modalCloseBtn.addEventListener("click", () => {
     modal.classList.remove("active");
   });
+});
+
+// Show project images with loading indicator
+projectImages[projectTitle].forEach((imgSrc) => {
+  const imgContainer = document.createElement("div");
+  imgContainer.className = "image-container loading";
+  
+  const img = document.createElement("img");
+  img.src = imgSrc;
+  img.alt = "Project Image";
+  
+  // Remove loading state when image loads
+  img.onload = () => {
+    imgContainer.classList.remove("loading");
+  };
+  
+  imgContainer.appendChild(img);
+  modalImages.appendChild(imgContainer);
 });
