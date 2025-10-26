@@ -350,7 +350,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "./assets/images/img25 (32).jpg",
       "./assets/images/img25 (33).jpg",
     ],
-    "SAFEEN DRY ROCKS, ABU DHABI": [
+    "SAFEEN DRY ROCKS, ABU-DHABI": [
       "./assets/images/img26 (1).jpg",
       "./assets/images/img26 (2).jpg",
       "./assets/images/img26 (3).jpg",
@@ -360,7 +360,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "./assets/images/img26 (7).jpg",
       "./assets/images/img26 (8).jpg",   
     ],
-    "AL OMAIRAH ISLAND, ABU DHABI": [
+    "ADNOC LABOUR ACCOMODATION, AL OMAIRAH ISLAND": [
       "./assets/images/img27 (1).jpg",
       "./assets/images/img27 (2).jpg",
       "./assets/images/img27 (3).jpg",
