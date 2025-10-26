@@ -360,6 +360,15 @@ document.addEventListener("DOMContentLoaded", function () {
       "./assets/images/img26 (7).jpg",
       "./assets/images/img26 (8).jpg",   
     ],
+    "AL OMAIRAH ISLAND, ABU DHABI": [
+      "./assets/images/img27 (1).jpg",
+      "./assets/images/img27 (2).jpg",
+      "./assets/images/img27 (3).jpg",
+      "./assets/images/img27 (4).jpg",
+      "./assets/images/img27 (5).jpg",
+      "./assets/images/img27 (6).jpg",
+      "./assets/images/img27 (7).jpg",
+    ],
   };
 
   // ✅ NEW: Newspaper clippings dictionary (add your clipping images here)
