@@ -1692,10 +1692,22 @@ ion-icon {
 }
 
 .video-item {
-  width: 95%; /* Large video layout */
-  max-width: 1000px; /* Prevent videos from being too wide */
-  text-align: center; /* Center the title */
+  width: 95%;
+  max-width: 450px; /* Better for mobile & tablets */
+  text-align: center;
+  margin: 0 auto;
 }
+
+/* Maintain clean square-ish frame (16:9 video kept proportion) */
+.video-item iframe {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Makes it a perfect square */
+  border-radius: 5px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  border: 2px solid var(--orange-yellow-crayola);
+  object-fit: cover;
+}
+
 
 .video-title {
   font-size: 24px;
@@ -1705,13 +1717,16 @@ ion-icon {
   text-transform: uppercase;
 }
 
-.video-item iframe {
-  width: 100%;
-  max-height: 550px;
-  border-radius: 5px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-  border: 2px solid var(--orange-yellow-crayola);
+@media (min-width: 768px) {
+  .video-item {
+    max-width: 900px;
+  }
+
+  .video-item iframe {
+    aspect-ratio: 16 / 9; /* Widescreen on desktop */
+  }
 }
+
 
 .clippings-divider {
   margin: 0 0 20px 0;
