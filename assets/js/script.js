@@ -318,6 +318,13 @@ document.addEventListener("DOMContentLoaded", function () {
       "./assets/images/img24 (21).jpg",
       "./assets/images/img24 (22).jpg",
       "./assets/images/img24 (23).jpg",
+      "./assets/images/img24 (24).jpg",
+      "./assets/images/img24 (25).jpg",
+      "./assets/images/img24 (26).jpg",
+      "./assets/images/img24 (27).jpg",
+      "./assets/images/img24 (28).jpg",
+      "./assets/images/img24 (29).jpg",
+      "./assets/images/img24 (30).jpg",
     ],
     "AL-AIN FARM HOUSE": [
       "./assets/images/img25 (1).jpg",
@@ -369,6 +376,17 @@ document.addEventListener("DOMContentLoaded", function () {
       "./assets/images/img27 (6).jpg",
       "./assets/images/img27 (7).jpg",
     ],
+    "DESIGN OF INDUSTRIAL HANGARS PHASE 13A -ABU DHABI": [
+      "./assets/images/img28 (1).jpg",
+      "./assets/images/img28 (2).jpg",
+      "./assets/images/img28 (3).jpg",
+      "./assets/images/img28 (4).jpg",
+      "./assets/images/img28 (5).jpg",
+      "./assets/images/img28 (6).jpg",
+      "./assets/images/img28 (7).jpg",
+      "./assets/images/img28 (8).jpg",
+      "./assets/images/img28 (9).jpg",
+    ]
   };
 
   // ✅ NEW: Newspaper clippings dictionary (add your clipping images here)
