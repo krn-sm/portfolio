@@ -1765,3 +1765,36 @@ ion-icon {
   opacity: 1;
   transition: opacity 0.3s;
 }
+.certifications {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px; /* Space between certificates */
+}
+
+.cert-block {
+  background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: var(--shadow-2);
+}
+
+.cert-block img {
+  width: 100%;
+  max-width: 1000px; /* keeps it large but not too large */
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  border-radius: 6px;
+  object-fit: contain;
+  background: #111;
+}
+
+.cert-caption {
+  margin-top: 12px;
+  font-size: 18px;
+  color: var(--light-gray);
+  font-weight: 500;
+}
