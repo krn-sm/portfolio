@@ -405,6 +405,11 @@ document.addEventListener("DOMContentLoaded", function () {
       "./assets/images/img28 (7).jpg",
       "./assets/images/img28 (8).jpg",
       "./assets/images/img28 (9).jpg",
+    ],
+    "CAPITAL MILLS, ABU-DHABI": [
+      "./assets/images/img29 (1).jpg",
+      "./assets/images/img29 (2).jpg",
+      "./assets/images/img29 (3).jpg",
     ]
   };
 
