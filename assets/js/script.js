@@ -103,6 +103,31 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalImages = document.getElementById("modalImages");
   const modalCloseBtn = document.getElementById("modalCloseBtn");
 
+  // ✅ MOBILE BACK BUTTON HANDLER - Close modal instead of closing site
+  let modalOpenedViaButton = false;
+
+  // Track when modal is opened
+  const openModal = () => {
+    modalOpenedViaButton = true;
+    // Push a state to the history stack so back button works
+    history.pushState({ modalOpen: true }, null);
+  };
+
+  // Handle back button
+  window.addEventListener("popstate", function (event) {
+    if (event.state && event.state.modalOpen) {
+      // Close modal instead of going back
+      modal.classList.remove("active");
+      modalOpenedViaButton = false;
+      event.preventDefault();
+    } else if (modal.classList.contains("active")) {
+      // If modal is open and user presses back, close it
+      modal.classList.remove("active");
+      // Push state again so next back goes to previous page
+      history.pushState(null, null);
+    }
+  });
+
   // ✅ Image dictionary for each project
   const projectImages = {
     "TRICHY VILLA PROJECT": [
@@ -506,7 +531,7 @@ document.addEventListener("DOMContentLoaded", function () {
           // Add interior Section
           if (sections.interior && sections.interior.length > 0) {
             const interiorDivider = document.createElement("div");
-            interiorDivider.innerHTML = "<h3>interior</h3>";
+            interiorDivider.innerHTML = "<h3>🏢 interior</h3>";
             interiorDivider.className = "section-divider interior-divider";
             modalImages.appendChild(interiorDivider);
 
@@ -522,7 +547,7 @@ document.addEventListener("DOMContentLoaded", function () {
           // Add exterior Section
           if (sections.exterior && sections.exterior.length > 0) {
             const exteriorDivider = document.createElement("div");
-            exteriorDivider.innerHTML = "<h3>exterior</h3>";
+            exteriorDivider.innerHTML = "<h3>🏗️ exterior</h3>";
             exteriorDivider.className = "section-divider exterior-divider";
             modalImages.appendChild(exteriorDivider);
 
@@ -547,6 +572,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         modal.classList.add("active");
+        // ✅ Trigger back button handler when modal opens
+        openModal();
       }
     });
   });
@@ -554,12 +581,18 @@ document.addEventListener("DOMContentLoaded", function () {
   // ✅ Close modal when clicking the X button
   modalCloseBtn.addEventListener("click", () => {
     modal.classList.remove("active");
+    modalOpenedViaButton = false;
+    // Go back in history to remove the pushed state
+    history.back();
   });
 
   // ✅ Close modal when clicking outside (on the dark background)
   modal.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.classList.remove("active");
+      modalOpenedViaButton = false;
+      // Go back in history to remove the pushed state
+      history.back();
     }
   });
 });
