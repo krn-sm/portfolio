@@ -17,7 +17,7 @@ if (sidebarBtn) {
 // ✅ Project Filtering
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-select-value]"); // Fixed typo
+const selectValue = document.querySelector("[data-select-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
 // Open filter dropdown
@@ -205,6 +205,9 @@ document.addEventListener("DOMContentLoaded", function () {
       "./assets/images/img12 (6).jpg",
       "./assets/images/img12 (7).jpg",
       "./assets/images/img12 (8).jpg",
+      "./assets/images/img12 (9).jpg",
+      "./assets/images/img12 (10).jpg",
+      "./assets/images/img12 (11).jpg",
     ],
     "ALTARAD, ABU-DHABI": [
       "./assets/images/img13 (1).jpg",
@@ -410,19 +413,63 @@ document.addEventListener("DOMContentLoaded", function () {
       "./assets/images/img29 (1).jpg",
       "./assets/images/img29 (2).jpg",
       "./assets/images/img29 (3).jpg",
-    ]
+    ],
+    "ALFA LAVAL, ABU-DHABI": {
+      exterior: [
+        "./assets/images/img30 (1).jpg",
+        "./assets/images/img30 (2).jpg",
+        "./assets/images/img30 (3).jpg",
+        "./assets/images/img30 (4).jpg",
+        "./assets/images/img30 (5).jpg",
+        "./assets/images/img30 (6).jpg",
+        "./assets/images/img30 (7).jpg",
+        "./assets/images/img30 (8).jpg",
+      ],
+      interior: [
+      "./assets/images/img30 (9).jpg",
+      "./assets/images/img30 (10).jpg",
+      "./assets/images/img30 (11).jpg",
+      "./assets/images/img30 (12).jpg",
+      "./assets/images/img30 (13).jpg",
+      "./assets/images/img30 (14).jpg",
+      "./assets/images/img30 (17).jpg",
+      "./assets/images/img30 (18).jpg",
+      "./assets/images/img30 (19).jpg",
+      "./assets/images/img30 (20).jpg",
+      "./assets/images/img30 (23).jpg",
+      "./assets/images/img30 (24).jpg",
+      "./assets/images/img30 (25).jpg",
+      "./assets/images/img30 (26).jpg",
+      ],
+    }
   };
 
-  // ✅ NEW: Newspaper clippings dictionary (add your clipping images here)
+  // ✅ Newspaper clippings dictionary
   const newspaperClippings = {
     "BISCONNI FOOD FACTORY, ABU-DHABI": [
       "./assets/images/article1.jpg",
-      // Add more clipping images as needed
     ],
-    // Add other projects with clippings here:
-    // "DE ROYAL TOBACCO FACTORY, UAQ": [
-    //   "./assets/images/deroyal-clipping1.jpg",
-    // ],
+  };
+
+  // ✅ Helper function to check if a project has sections
+  const hasProjectSections = (projectTitle) => {
+    return (
+      typeof projectImages[projectTitle] === "object" &&
+      projectImages[projectTitle] !== null &&
+      !Array.isArray(projectImages[projectTitle]) &&
+      (projectImages[projectTitle].interior || projectImages[projectTitle].exterior)
+    );
+  };
+
+  // ✅ Helper function to get all images from a project
+  const getProjectImages = (projectTitle) => {
+    const project = projectImages[projectTitle];
+    if (Array.isArray(project)) {
+      return project;
+    } else if (project && project.interior && project.exterior) {
+      return { interior: project.interior, exterior: project.exterior };
+    }
+    return [];
   };
 
   // ✅ Open modal when clicking a project
@@ -435,33 +482,69 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (projectImages[projectTitle]) {
         modalImages.innerHTML = ""; // Clear previous images
-        // ✅ NEW: Add newspaper clippings section if available
+        
+        // ✅ Add newspaper clippings section if available
         if (newspaperClippings[projectTitle]) {
-          // Create section divider
           const divider = document.createElement("div");
           divider.innerHTML = "<h3>📰 Newspaper Clipping</h3>";
           divider.className = "clippings-divider";
           modalImages.appendChild(divider);
-          
 
-          // Add clipping images
           newspaperClippings[projectTitle].forEach((clippingSrc) => {
             const clippingImg = document.createElement("img");
             clippingImg.src = clippingSrc;
             clippingImg.alt = "Newspaper Clipping";
             clippingImg.className = "clipping-image";
             modalImages.appendChild(clippingImg);
-            
           });
         }
-        // ✅ Add project images
-        projectImages[projectTitle].forEach((imgSrc) => {
-          const img = document.createElement("img");
-          img.src = imgSrc;
-          img.alt = "Project Image";
-          modalImages.appendChild(img);
-        });
 
+        // ✅ Check if project has interior/exterior sections
+        if (hasProjectSections(projectTitle)) {
+          const sections = getProjectImages(projectTitle);
+
+          // Add interior Section
+          if (sections.interior && sections.interior.length > 0) {
+            const interiorDivider = document.createElement("div");
+            interiorDivider.innerHTML = "<h3>interior</h3>";
+            interiorDivider.className = "section-divider interior-divider";
+            modalImages.appendChild(interiorDivider);
+
+            sections.interior.forEach((imgSrc) => {
+              const img = document.createElement("img");
+              img.src = imgSrc;
+              img.alt = "interior View";
+              img.className = "project-image";
+              modalImages.appendChild(img);
+            });
+          }
+
+          // Add exterior Section
+          if (sections.exterior && sections.exterior.length > 0) {
+            const exteriorDivider = document.createElement("div");
+            exteriorDivider.innerHTML = "<h3>exterior</h3>";
+            exteriorDivider.className = "section-divider exterior-divider";
+            modalImages.appendChild(exteriorDivider);
+
+            sections.exterior.forEach((imgSrc) => {
+              const img = document.createElement("img");
+              img.src = imgSrc;
+              img.alt = "exterior View";
+              img.className = "project-image";
+              modalImages.appendChild(img);
+            });
+          }
+        } else {
+          // ✅ For projects without sections, add images normally
+          const images = getProjectImages(projectTitle);
+          images.forEach((imgSrc) => {
+            const img = document.createElement("img");
+            img.src = imgSrc;
+            img.alt = "Project Image";
+            img.className = "project-image";
+            modalImages.appendChild(img);
+          });
+        }
 
         modal.classList.add("active");
       }
@@ -472,22 +555,11 @@ document.addEventListener("DOMContentLoaded", function () {
   modalCloseBtn.addEventListener("click", () => {
     modal.classList.remove("active");
   });
-});
 
-// Show project images with loading indicator
-projectImages[projectTitle].forEach((imgSrc) => {
-  const imgContainer = document.createElement("div");
-  imgContainer.className = "image-container loading";
-  
-  const img = document.createElement("img");
-  img.src = imgSrc;
-  img.alt = "Project Image";
-  
-  // Remove loading state when image loads
-  img.onload = () => {
-    imgContainer.classList.remove("loading");
-  };
-  
-  imgContainer.appendChild(img);
-  modalImages.appendChild(imgContainer);
+  // ✅ Close modal when clicking outside (on the dark background)
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.remove("active");
+    }
+  });
 });
