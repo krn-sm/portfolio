@@ -500,6 +500,27 @@ document.addEventListener("DOMContentLoaded", function () {
       "./assets/images/img32 (8).jpg",
       "./assets/images/img32 (9).jpg",
     ],
+    "TANKER FILLING STATION, ABU-DHABI": [
+      "./assets/images/img33 (1).jpg",
+      "./assets/images/img33 (2).jpg",
+      "./assets/images/img33 (3).jpg",
+      "./assets/images/img33 (4).jpg",
+      "./assets/images/img33 (5).jpg",
+      "./assets/images/img33 (6).jpg",
+      "./assets/images/img33 (7).jpg",
+      "./assets/images/img33 (8).jpg",
+      "./assets/images/img33 (9).jpg",
+    ],
+    "TARA INDUSTRIES, ABU-DHABI": [
+      "./assets/images/img34 (1).jpg",
+      "./assets/images/img34 (2).jpg",
+      "./assets/images/img34 (3).jpg",
+      "./assets/images/img34 (4).jpg",
+      "./assets/images/img34 (5).jpg",
+      "./assets/images/img34 (6).jpg",
+      "./assets/images/img34 (7).jpg",
+      "./assets/images/img34 (8).jpg",
+    ],
   };
 
   // ✅ Newspaper clippings dictionary
