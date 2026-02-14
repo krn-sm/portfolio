@@ -466,7 +466,34 @@ document.addEventListener("DOMContentLoaded", function () {
       "./assets/images/img30 (25).jpg",
       "./assets/images/img30 (26).jpg",
       ],
-    }
+    },
+    "BAPS HINDU MANDIR, ABU DHABI": [
+      "./assets/images/img31 (1).jpg",
+      "./assets/images/img31 (2).jpg",
+      "./assets/images/img31 (3).jpg",
+      "./assets/images/img31 (4).jpg",
+      "./assets/images/img31 (5).jpg",
+      "./assets/images/img31 (6).jpg",
+      "./assets/images/img31 (7).jpg",
+      "./assets/images/img31 (8).jpg",
+      "./assets/images/img31 (9).jpg",
+      "./assets/images/img31 (10).jpg",
+      "./assets/images/img31 (11).jpg",
+      "./assets/images/img31 (12).jpg",
+      "./assets/images/img31 (13).jpg",
+    ],
+    "CAPITAL SURVEY, ABU DHABI": [
+      "./assets/images/img32 (1).jpg",
+      "./assets/images/img32 (2).jpg",
+      "./assets/images/img32 (3).jpg",
+      "./assets/images/img32 (4).jpg",
+      "./assets/images/img32 (10).png",
+      "./assets/images/img32 (5).jpg",
+      "./assets/images/img32 (6).jpg",
+      "./assets/images/img32 (7).jpg",
+      "./assets/images/img32 (8).jpg",
+      "./assets/images/img32 (9).jpg",
+    ],
   };
 
   // ✅ Newspaper clippings dictionary
