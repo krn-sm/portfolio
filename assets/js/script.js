@@ -320,6 +320,12 @@ document.addEventListener("DOMContentLoaded", function () {
       "./assets/images/img23 (3).jpg",
       "./assets/images/img23 (4).jpg",
       "./assets/images/img23 (5).jpg",
+      "./assets/images/img23 (6).jpg",
+      "./assets/images/img23 (7).jpg",
+      "./assets/images/img23 (8).jpg",
+      "./assets/images/img23 (9).jpg",
+      "./assets/images/img23 (10).jpg",
+      "./assets/images/img23 (11).jpg",
     ],
     "INTERIOR WORKS": ["./assets/images/img.png"],
     "BISCONNI FOOD FACTORY, ABU-DHABI": [
