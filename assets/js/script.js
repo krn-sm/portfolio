@@ -521,6 +521,16 @@ document.addEventListener("DOMContentLoaded", function () {
       "./assets/images/img34 (7).jpg",
       "./assets/images/img34 (8).jpg",
     ],
+    "PURE BABY FOODS, ABU-DHABI": [
+      "./assets/images/img35 (1).jpg",
+      "./assets/images/img35 (2).jpg",
+      "./assets/images/img35 (3).jpg",
+      "./assets/images/img35 (4).jpg",
+      "./assets/images/img35 (5).jpg",
+      "./assets/images/img35 (6).jpg",
+      "./assets/images/img35 (7).jpg",
+      "./assets/images/img35 (8).jpg",
+    ],
   };
 
   // ✅ Newspaper clippings dictionary
