@@ -531,6 +531,33 @@ document.addEventListener("DOMContentLoaded", function () {
       "./assets/images/img35 (7).jpg",
       "./assets/images/img35 (8).jpg",
     ],
+    "AJMAL STEEL MOSQUE" : [
+      "./assets/images/img36 (1).jpg",
+      "./assets/images/img36 (2).jpg",
+      "./assets/images/img36 (3).jpg",
+      "./assets/images/img36 (4).jpg",
+      "./assets/images/img36 (5).jpg",
+      "./assets/images/img36 (6).jpg",
+      "./assets/images/img36 (7).jpg",
+      "./assets/images/img36 (8).jpg",
+      "./assets/images/img36 (9).jpg",
+      "./assets/images/img36 (10).jpg",
+      "./assets/images/img36 (11).jpg",
+      "./assets/images/img36 (12).jpg",
+      "./assets/images/img36 (13).jpg",
+      "./assets/images/img36 (14).jpg",
+      "./assets/images/img36 (15).jpg",
+      "./assets/images/img36 (16).jpg",
+      "./assets/images/img36 (17).jpg",
+      "./assets/images/img36 (18).jpg",
+      "./assets/images/img36 (19).jpg",
+      "./assets/images/img36 (20).jpg",
+      "./assets/images/img36 (21).jpg",
+      "./assets/images/img36 (22).jpg",
+      "./assets/images/img36 (23).jpg",
+      "./assets/images/img36 (24).jpg",
+      "./assets/images/img36 (25).jpg",
+    ]
   };
 
   // ✅ Newspaper clippings dictionary
